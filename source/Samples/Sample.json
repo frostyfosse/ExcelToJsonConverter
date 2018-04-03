@@ -1,0 +1,22 @@
+[
+  {
+    "ChemicalElementName": "Boron",
+    "Symbol": "B",
+    "AtomicNumber": 5.0
+  },
+  {
+    "ChemicalElementName": "Bromine",
+    "Symbol": "Br",
+    "AtomicNumber": 35.0
+  },
+  {
+    "ChemicalElementName": "Cadmium",
+    "Symbol": "Cd",
+    "AtomicNumber": 48.0
+  },
+  {
+    "ChemicalElementName": "Calcium",
+    "Symbol": "Ca",
+    "AtomicNumber": 20.0
+  }
+]
