@@ -1,0 +1,10 @@
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\bin\Release\netcoreapp2.0\ExcelToJsonConverter.deps.json
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\bin\Release\netcoreapp2.0\ExcelToJsonConverter.runtimeconfig.json
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\bin\Release\netcoreapp2.0\ExcelToJsonConverter.runtimeconfig.dev.json
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\bin\Release\netcoreapp2.0\ExcelToJsonConverter.dll
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\bin\Release\netcoreapp2.0\ExcelToJsonConverter.pdb
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.csproj.CoreCompileInputs.cache
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.AssemblyInfoInputs.cache
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.AssemblyInfo.cs
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.dll
+C:\Users\jfosse\Downloads\ExcelToJsonConverter-master\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.pdb

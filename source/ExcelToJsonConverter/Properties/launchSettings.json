@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ExcelToJsonConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "--s=\"C:\\Users\\jfosse\\Documents\\CODYCore\\SearchTermMetadata\\PersonDocMakeJsonGroups_SrchEllip_JRF.xlsx\" --o=\"C:\\Users\\jfosse\\Documents\\CODYCore\\SearchTermMetadata\\PersonDocMakeJsonGroups_SrchEllip_JRF.json\" --i=0"
+    }
+  }
+}
