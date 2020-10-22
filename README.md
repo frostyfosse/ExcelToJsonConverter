@@ -1,6 +1,8 @@
 # ExcelToJsonConverter
 Converts all data within a given worksheet into a json document. 
 
+Requirement: Must be an Office Open XML SpreadsheetML File Format (.xlsx)
+
 Workflow:
 1. There are 3 parameters:
 - SpreadsheetPath: The full path to the excel spreadsheet
