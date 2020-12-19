@@ -50,6 +50,18 @@ namespace ExcelToJsonConverter
                     jArray.Add(jObject);
             }
 
+            if (!jsonFilePath.EndsWith(".json"))
+            {
+                throw new Exception($@"A valid json file name must be specified 
+                                       for the output path. For example, 'C:\MyDirectory\MyFile.json' 
+                                       (received '{jsonFilePath}')");
+            }
+
+            var directoryPath = Path.GetDirectoryName(jsonFilePath);
+
+            if (!Directory.Exists(directoryPath))
+                Directory.CreateDirectory(directoryPath);
+
             File.WriteAllText(jsonFilePath, jArray.ToString());
         }
     }
