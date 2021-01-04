@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "ExcelToJsonConverter/1.0.0": {
+      "ExcelToJsonConverter/1.1.0": {
         "dependencies": {
           "CommandLineParser": "1.9.71",
           "EPPlus": "4.5.3.3",
@@ -821,7 +821,7 @@
     }
   },
   "libraries": {
-    "ExcelToJsonConverter/1.0.0": {
+    "ExcelToJsonConverter/1.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -11,8 +11,8 @@ namespace ExcelToJsonConverter
         [Option(shortName:'s', Required = true, HelpText = "The full file path to the spreadsheet. (i.e. C:\\MyFolder\\MyFile.xlsx)")]
         public string SpreadsheetFilePath { get; set; }
 
-        [Option(shortName: 'i', Required = true, HelpText = "The tab index within the spreadsheet to output. For example, if it's the first tab it would be 0.")]
-        public int WorkSheetIndex { get; set; }
+        [Option(shortName: 't', Required = true, HelpText = "The tab name within the spreadsheet to output. Example, \"My Tab Name\"")]
+        public string WorkSheetName { get; set; }
 
         [Option(shortName: 'o', Required = true, HelpText = "The full file path of the output file. (i.e. C:\\MyFolder\\MyFile.json)")]
         public string OutputPath { get; set; }

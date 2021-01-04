@@ -4,17 +4,32 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace ExcelToJsonConverter
 {
     public static class Converter
     {
-        public static void Convert(string spreadsheetFilePath, int workSheetIndex, string jsonFilePath)
+        static ExcelPackage GetPackage(string spreadsheetFilePath)
         {
             var fileInfo = new FileInfo(spreadsheetFilePath);
-            var package = new ExcelPackage(fileInfo);
-            ExcelWorksheet workSheet = package.Workbook.Worksheets[workSheetIndex];
+            
+            return new ExcelPackage(fileInfo);
+        }
+
+        static ExcelWorksheet GetWorksheet(string spreadsheetFilePath, int workSheetIndex)
+        {
+            return GetPackage(spreadsheetFilePath).Workbook.Worksheets[workSheetIndex];
+        }
+
+        static ExcelWorksheet GetWorksheet(string spreadsheetFilePath, string workSheetName)
+        {
+            return GetPackage(spreadsheetFilePath).Workbook?
+                                                  .Worksheets?
+                                                  .FirstOrDefault(x => x.Name.Equals(workSheetName, StringComparison.OrdinalIgnoreCase));
+        }
+
+        static void Convert(ExcelWorksheet workSheet, string jsonFilePath)
+        {
             bool headerRowCollected = false;
             int endColumnIndex = workSheet.Dimension.End.Column;
             var jArray = new JArray();
@@ -63,6 +78,20 @@ namespace ExcelToJsonConverter
                 Directory.CreateDirectory(directoryPath);
 
             File.WriteAllText(jsonFilePath, jArray.ToString());
+        }
+
+        public static void Convert(string spreadsheetFilePath, int workSheetIndex, string jsonFilePath)
+        {
+            var workSheet = GetWorksheet(spreadsheetFilePath, workSheetIndex);
+
+            Convert(workSheet, jsonFilePath);
+        }
+
+        public static void Convert(string spreadsheetFilePath, string workSheetName, string jsonFilePath)
+        {
+            var workSheet = GetWorksheet(spreadsheetFilePath, workSheetName);
+
+            Convert(workSheet, jsonFilePath);
         }
     }
 }

@@ -19,4 +19,3 @@ C:\Users\jfosse\Documents\GitHub\ExcelToJsonConverter\source\ExcelToJsonConverte
 C:\Users\jfosse\Documents\GitHub\ExcelToJsonConverter\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.dll
 C:\Users\jfosse\Documents\GitHub\ExcelToJsonConverter\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.pdb
 C:\Users\jfosse\Documents\GitHub\ExcelToJsonConverter\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.genruntimeconfig.cache
-C:\Users\jfosse\Documents\GitHub\ExcelToJsonConverter\source\ExcelToJsonConverter\obj\Release\netcoreapp2.0\ExcelToJsonConverter.csprojAssemblyReference.cache

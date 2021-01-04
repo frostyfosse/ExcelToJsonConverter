@@ -23,12 +23,12 @@ namespace ExcelToJsonConverter
                     {
                         var parameterText = string.Join(Environment.NewLine, $"{nameof(parameters.SpreadsheetFilePath)}: '{parameters.SpreadsheetFilePath}'",
                                                                              $"{nameof(parameters.OutputPath)}: '{parameters.OutputPath}'",
-                                                                             $"{nameof(parameters.WorkSheetIndex)}: '{parameters.WorkSheetIndex}'");
+                                                                             $"{nameof(parameters.WorkSheetName)}: '{parameters.WorkSheetName}'");
 
                         Console.WriteLine("Parameters received");
                         Console.WriteLine(parameterText);
 
-                        Converter.Convert(parameters.SpreadsheetFilePath, parameters.WorkSheetIndex, parameters.OutputPath);
+                        Converter.Convert(parameters.SpreadsheetFilePath, parameters.WorkSheetName, parameters.OutputPath);
                     }
                     catch(Exception e)
                     {
@@ -53,8 +53,8 @@ namespace ExcelToJsonConverter
         /// </summary>
         public static void SampleCallToConverter()
         {
-            var directory = @"C:\Users\jfosse\Downloads\XlsxToJsonParser";
-            Converter.Convert(Path.Combine(directory, "Sample.xlsx"), 0, Path.Combine(directory, "Sample.json"));
+            var directory = @"C:\MyDirectory\XlsxToJsonParser";
+            Converter.Convert(Path.Combine(directory, "Sample.xlsx"), "My Excel Data", Path.Combine(directory, "Sample.json"));
         }
     }
 }
